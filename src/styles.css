@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+.custom-navbar {
+  background-color: #444;
+  height: 48px;
+  line-height: 48px;
+  margin-bottom: 8px;
+}
+
+.custom-navbar table {
+  width: 100%;
+}
+
+.custom-nav-area-left {
+  width: 80%;
+}
+
+.custom-nav-area-left span {
+  font-size: 120%;
+  font-weight: bold;
+  color: #eee;
+}
+
+.custom-nav-area-right {
+  width: 20%;
+  text-align: right;
+}
+
+.custom-nav-area-right .btn{
+  margin-top: -5px;
+}
+
+.container {
+  padding-right: 18px;
+  padding-left: 18px;
+}

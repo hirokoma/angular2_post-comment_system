@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 px-1 py-1">
+        <h2>コメント</h2>
+        <div class="card px-2 py-2">
+          <div>
+            <textarea [(ngModel)]="body" class="form-control"></textarea>
+          </div>
+          <div class="mt-2 create-button-area">
+            <button class="btn btn-outline-success" (click)="create()">
+              投稿
+            </button>
+          </div>
+        </div>
+      </div>
+    
+  </div><!-- end of row -->
+</div><!-- end of container -->

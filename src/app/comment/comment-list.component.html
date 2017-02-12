@@ -1,0 +1,21 @@
+<div *ngIf="comments">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 px-1 py-1" *ngFor="let comment of comments">
+
+        <div class="card px-2 py-2">
+          <div>
+            <span class="badge badge-primary">{{comment.id}}</span>
+          </div>
+          <div>
+            {{comment.body}}
+          </div>
+          <div>
+            {{comment.user.email}}
+          </div>
+        </div>
+
+      </div>
+    </div><!-- end of row -->
+  </div><!-- end of container -->
+</div>

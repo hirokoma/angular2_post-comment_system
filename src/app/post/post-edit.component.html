@@ -1,0 +1,26 @@
+<div *ngIf="post">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 px-1 py-1">
+        <h2>編集ページです</h2>
+        <div class="card px-2 py-2">
+          <div>
+            <span class="badge badge-primary">{{post.id}}</span>
+          </div>
+          <div>
+            <textarea [(ngModel)]="post.body" class="form-control"></textarea>
+          </div>
+          <div class="mt-2 edit-button-area">
+            <button class="btn btn-outline-success" (click)="update()">
+              更新
+            </button>
+          </div>
+          <div class="mt-2 edit-button-area">
+            <post-destroy></post-destroy>
+          </div>
+        </div>
+      </div><!-- end of col-12 col-sm-11 -->
+      
+    </div><!-- end of row -->
+  </div><!-- end of container -->
+</div>

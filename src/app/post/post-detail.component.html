@@ -1,0 +1,23 @@
+<div *ngIf="post">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 px-1 py-1">
+        <h2>詳細ページです</h2>
+        <div class="card px-2 py-2">
+          <div>
+            <span class="badge badge-primary">{{post.id}}</span>
+          </div>
+          <div>
+            {{post.body}}
+          </div>
+        </div>
+      </div>
+      
+    </div><!-- end of row -->
+    <a routerLink="/posts/{{post.id}}/edit">編集</a>
+  </div><!-- end of container -->
+
+  <comment-new [post]="post"></comment-new>
+  <comment-list [post]="post"></comment-list>
+</div><!-- end of ngIf -->
